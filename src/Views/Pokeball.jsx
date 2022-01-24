@@ -1,4 +1,4 @@
-// import "./App.css";
+
 import * as THREE from "three";
 import { Suspense, useRef, useState } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
@@ -59,9 +59,9 @@ export default function App({ count = 100, depth = 80 }) {
           ))}
           <EffectComposer>
             <DepthOfField
-              target={[0, 0, depth / 2]}
-              focalLength={0.6}
-              bokehScale={7}
+              target={[0, 0, depth * 2]}
+              focalLength={0.8}
+              bokehScale={2}
               height={700}
             />
           </EffectComposer>

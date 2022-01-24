@@ -1,14 +1,17 @@
 import "./App.css";
-import React from 'react'
-import Pokeball from './Views/Pokeball.js'
+import React from "react";
+import Pokeball from "./Views/Pokeball.jsx";
+import Camera from "./Views/Camera.jsx";
 
 function App() {
   return (
     <>
-      <Pokeball/>
-      <h1 className='main'>Pokédex de Alex pronto!</h1>
+      <Pokeball />
+      <div className="main">
+        <Camera />
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
