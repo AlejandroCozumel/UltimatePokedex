@@ -68,16 +68,3 @@ function Camera() {
 }
 
 export default Camera;
-
-{
-  /* <div className={"result " + (hasPhoto ? "hasPhoto" : "")}>
-<canvas ref={photoRef}></canvas>
-<button onClick={closePhoto}>CLOSE!</button>
-</div> */
-}
-
-{/* <div class="center-on-page">
-<div class="pokeball">
-  <button class="pokeball__button"></button>
-</div>
-</div> */}
