@@ -8,6 +8,7 @@ function App() {
     <>
       <Pokeball />
       <div className="main">
+        {" "}
         <Camera />
       </div>
     </>
