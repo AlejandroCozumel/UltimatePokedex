@@ -23,8 +23,8 @@ function Camera() {
   };
 
   const takePhoto = () => {
-    const width = 800;
-    const height = 800;
+    const width = 960;
+    const height = 540;
 
     let video = videoRef.current;
     let photo = photoRef.current;
@@ -39,7 +39,7 @@ function Camera() {
   };
 
   console.log(photoInfo);
-
+  
   const closePhoto = () => {
     let photo = photoRef.current;
     let ctx = photo.getContext("2d");
