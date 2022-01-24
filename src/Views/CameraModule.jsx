@@ -1,5 +1,4 @@
 import { React, useEffect, useRef, useState } from "react";
-import { CameraPro } from "react-camera-pro";
 
 function Camera() {
   const videoRef = useRef(null);
