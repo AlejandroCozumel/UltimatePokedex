@@ -1,4 +1,5 @@
 import { React, useEffect, useRef, useState } from "react";
+import { CameraPro } from "react-camera-pro";
 
 function Camera() {
   const videoRef = useRef(null);
@@ -39,7 +40,7 @@ function Camera() {
   };
 
   console.log(photoInfo);
-  
+
   const closePhoto = () => {
     let photo = photoRef.current;
     let ctx = photo.getContext("2d");
@@ -55,14 +56,29 @@ function Camera() {
     <div className="cameraContainer">
       <div className="camera">
         <video ref={videoRef}></video>
-        <button onClick={takePhoto}>SNAP!</button>
+        <button className="button left" onClick={takePhoto}>SNAP!</button>
       </div>
       <div className={"result " + (hasPhoto ? "hasPhoto" : "")}>
         <canvas ref={photoRef}></canvas>
-        <button onClick={closePhoto}>CLOSE!</button>
+        <button className="button left" onClick={closePhoto}>CLOSE!</button>
+        <button className="right button" onClick={closePhoto}>HOLII!</button>
       </div>
+
     </div>
   );
 }
 
 export default Camera;
+
+{
+  /* <div className={"result " + (hasPhoto ? "hasPhoto" : "")}>
+<canvas ref={photoRef}></canvas>
+<button onClick={closePhoto}>CLOSE!</button>
+</div> */
+}
+
+{/* <div class="center-on-page">
+<div class="pokeball">
+  <button class="pokeball__button"></button>
+</div>
+</div> */}

@@ -50,7 +50,7 @@ export default function App({ count = 100, depth = 80 }) {
         dpr={[1, 1.5]}
         camera={{ position: [0, 0, 10], fov: 30, near: 0.01, far: 110, }}
       >
-        <color attach="background" args={["#ffbf40"]} />
+        <color attach="background" args={["#EDC339"]} />
         <spotLight position={[10, 10, 10]} intensity={2} />
         <Suspense fallback={null}>
           <Environment preset="sunset" />
