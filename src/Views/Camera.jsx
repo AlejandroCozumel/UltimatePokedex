@@ -10,7 +10,7 @@ function Camera() {
   const getVideo = () => {
     navigator.mediaDevices
       .getUserMedia({
-        video: { width: 960, height: 540 },
+        video: { width: 400, height: 400 },
       })
       .then((stream) => {
         let video = videoRef.current;
@@ -23,14 +23,14 @@ function Camera() {
   };
 
   const takePhoto = () => {
-    const width = 960;
-    const height = 540;
+    const width = 400;
+    const height = 400;
 
     let video = videoRef.current;
     let photo = photoRef.current;
 
     photo.width = width;
-    photo.height = height / (16 / 9);
+    photo.height = height;
 
     let ctx = photo.getContext("2d");
     ctx.drawImage(video, 0, 0, width, height);
